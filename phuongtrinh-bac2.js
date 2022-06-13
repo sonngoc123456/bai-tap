@@ -18,7 +18,7 @@ function sum() {
             x1 = x2 = -b / (2 * a).toFixed('2');
             document.getElementById('result').innerHTML = "phuong trinh co nghiem kep";
 
-            document.getElementById('result').innerHTML = "Nghiem x1=x2 = " + x1 2+ " Nghiem y = " + x;
+            document.getElementById('result').innerHTML = "Nghiem x = y = " + x1;
         }
     }
 }
