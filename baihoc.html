@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bang</title>
 </head>
 <body>
-$END$
+<form method="post">
+  <h2>Register</h2>
+  <label for="name">Name</label><br>
+  <input type="text" name="name" id="name" required><br>
+  <label for="email">Email</label><br>
+  <input type="email" id="email" required><br>
+  <label for="phone">Phone</label><br>
+  <input type="text" id="phone" required><br>
+  <label for="nam">
+  <input type="radio" name="gender" id="nam" checked>Male<br>
+  </label>
+  <label for="nu">
+  <input type="radio" name="gender" id="nu">female<br>
+  </label>
+  <br>
+  <label for="city">City</label>
+  <select name="city" id="city">
+    <option value="ha noi">Hà nội</option>
+    <option value="hcm">HCM</option>
+    <option value="hai phong">Hải Phòng</option>
+  </select>
+  <br>
+  <br>
+  <label for="image">
+    <input type="file" name="image" id="image" multiple>
+  </label>
+
+
+</form>
 </body>
 </html>

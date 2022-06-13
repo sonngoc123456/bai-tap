@@ -2,9 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-$END$
+<script type="text/javascript">
+  var a
+  a = prompt(`Enter a `)
+  var b
+  b = prompt(`Enter b `)
+  var c
+  c = prompt(`Enter c `)
+  var d = (b * b) - (4 * a * c)
+  if(a == 0) {
+    if(b == 0){
+      if (c == 0) {
+        document.write('All are solutions of x')
+
+      }
+      else{
+        document.write(`Can't solve for x`)
+      }
+    }
+    else{
+      document.write('x = '+(-c/b))
+    }
+  }
+  else if (d >= 0) {
+    document.write(`x1 = `+ ((-b + Math.sqrt(d)) / (2 * a)))
+    document.write(`<br>`)
+    document.write(`x2 = `+ ((-b - Math.sqrt(d)) / (2 * a)))
+  } else {
+    document.write(`Can't solve for x`)
+  }
+</script>
+</body>
+</html>
+
+
+
+Đào Mạnh Dũng [community,C2010L]
+
+Ngày viết: 22:15 23/02/2021
+
+
+
+
+Ẩn Code  Copy Code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phương trình bậc 2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+  var a = prompt('Nhập giá trị của a')
+  var b = prompt('Nhập giá trị của b')
+  var c = prompt('Nhập giá trị của c')
+
+
+  if(a == 0) {
+
+    if(b == 0) {
+      if (c == 0) {
+        alert('Phuong trinh vo so nghiem')
+
+      } else {
+        alert('Phuong trinh vo nghiem')
+      }
+    } else {
+      alert('Phuong trinh co nghiem duy nhat: '+(-c/b))
+    }
+  } else {
+    var delta = b*b - 4*a*c;
+    if(delta > 0) {
+      var x1 = (-b+Math.sqrt(delta))/(2*a);
+      var x2 = (-b-Math.sqrt(delta))/(2*a);
+      alert('Nghiem thu nhat x1 = '+x1+'\n Nghiem thu hai x2 = '+x2)
+    } else if ( delta == 0) {
+      var sum = -b/2*a
+      alert('Phuong trinh co nghiem kep: x1 = x2 = '+sum)
+    } else {
+      alert('Phuong trinh vo nghiem')
+    }
+  }
+</script>
 </body>
 </html>
